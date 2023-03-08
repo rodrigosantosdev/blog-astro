@@ -1,18 +1,17 @@
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Criando um blog com astro</title>
-	</head>
-	<body>
-		<nav>
-			<a href="/">home</a>
-			<a href="/about">about</a>
-			<a href="/blog">blog</a>
-		</nav>
+---
+import BaseLayouts from '../layouts/BaseLayouts.astro';
+---
 
-		<h1>ola mundo!!</h1>
-	</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+		<BaseLayouts pageTitle="Home pages..">
+    	<h1>Home page..</h1>
+		</BaseLayouts>
+  </body>
 </html>

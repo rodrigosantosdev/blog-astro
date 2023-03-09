@@ -1,0 +1,45 @@
+---
+import Logo from "../Images/logo.svg";
+---
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+        <img src={Logo} alt="Logo Ipsum" />
+      </a>
+    </div>
+    <nav class="navlink">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    background-color: var(--base-color);
+  }
+
+  .logo img {
+    margin-top: 8px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .navlink ul {
+    display: flex;
+  }
+
+  .navlink li {
+    padding: 1rem;
+  }
+</style>
